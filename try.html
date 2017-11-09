@@ -1,0 +1,152 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+body {
+	background-color:blue;
+	font-family: 'Quicksand', sans-serif ;
+    font-size: 18px;
+}
+.index{
+   width: 25px;
+   height: 10px; 
+   margin:45px 0 30px 30px;
+   padding:10% 10% 10% 10%;
+   text-align:center;
+   background: red;
+   float: left;
+
+}
+.index2{
+   width: 25px;
+   height: 10px; 
+   margin:45px 0 30px 30px;;
+   padding:10% 10% 10% 10%;
+   text-align:center;
+   background: red;
+   float: left;
+}
+.index4{
+	width:100px;
+	margin:25px 20px 0px 20px;
+	padding:4%  2% 2% 2%;
+	background: white;
+	float: left;
+	text-align: center;
+
+}
+.index3{
+
+   width: 25px;
+   height: 10px; 
+   margin:45px 0px 30px 30px;
+   padding:10% 10% 10% 10%;
+   text-align:center;
+   background: red;
+   float: left;
+
+}
+
+
+.classo{
+	width:500px;
+	height:200px;
+   margin-top: 50px;
+   margin-left: 50px;
+  padding:0 0 0 0;
+   background-color: yellow;
+   overflow: auto;
+   float:left;
+}
+#c{
+	width:750px;
+	height:300px;
+   margin: 1px ;
+  padding:0 0 0 0;
+   background-color: brown;
+   overflow: auto;
+}
+.D {
+	width: 75px; height:40px;
+	float:left;
+
+}
+
+.back{
+	text-align: center;
+    margin-top:-30px;
+    margin-left:-25px;
+    padding-top: 2%;
+    padding-bottom: 5px;
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(180deg) ;
+	color:green;
+	background-color: #FCEBB6; width: 75px; height: 40px; border-radius: 1px;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+}
+
+}
+.front{
+	text-align: center;
+    margin-top:-30px;
+    margin-left:-25px;
+    padding-top: 2%;
+    padding-bottom: 5px;
+	position: absolute;
+	-webkit-transform: perspective(600px) rotateY(0deg) ;
+	color:black;
+	background-color: #80BFFF; width: 75px; height: 40px; border-radius: 1px;
+	backface-visibility: hidden;
+	transition: -webkit-transform .5s linear 0s;
+}
+.index:hover>.front{
+      	-webkit-transform: perspective(600px) rotateY(-180deg);
+}
+.index:hover>.back{
+		-webkit-transform: perspective(600px) rotateY(0deg);
+}
+.D:hover>.front{
+      	-webkit-transform: perspective(600px) rotateY(-180deg);
+}
+.D:hover>.back{
+      	-webkit-transform: perspective(600px) rotateY(-180deg);
+}
+</style>
+
+
+
+<body>
+<div id="c">
+ <div class="classo">
+      <div class="index"> 
+        <div class="back"> You </div>
+        <div class="front"> Me </div>
+      </div>
+   <div class="index2">
+         <div class="back"> You </div>
+         <div class="front"> Me </div>
+      </div>
+   <div class="index3">
+   	     <div class="back">You </div>
+   	     <div class="front">Me </div>
+   </div>
+ </div>
+<div id="tutorial">
+  <div class="index4"> div</div>
+  <div class="index4"> div2</div>
+  <div class="index4"> div3</div>
+</div>
+</div>
+
+<div id="d">
+   <div class="D"> 
+           <div class="back"> You </div>
+           <div class="front"> Me </div>
+   </div>
+</div>
+</body>
+
+</html>
